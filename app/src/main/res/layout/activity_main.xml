@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D5DBDB">
+
+    <TextView
+        android:id="@+id/wt"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_above="@+id/weight"
+        android:layout_alignStart="@+id/weight"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_marginBottom="-117dp"
+        android:text="Weight"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter Weight" />
+
+    <TextView
+        android:id="@+id/ht"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_above="@+id/height"
+        android:layout_alignStart="@+id/wt"
+        android:layout_alignLeft="@+id/wt"
+        android:layout_marginBottom="-207dp"
+        android:text="Height"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter height" />
+
+    <Button
+        android:id="@+id/calculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="266dp"
+        android:text="Calculate BMI" />
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="198dp"
+        android:layout_height="117dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/wtUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weight"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:text="kg"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/htUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/height"
+        android:layout_alignStart="@+id/wtUnit"
+        android:layout_alignLeft="@+id/wtUnit"
+        android:text="cm"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:textSize="15dp"
+        android:text="* Tap on units to change them" />
+
+
+
+</android.widget.RelativeLayout>
